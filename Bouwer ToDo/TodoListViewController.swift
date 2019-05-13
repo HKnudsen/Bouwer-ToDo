@@ -11,10 +11,13 @@ import UIKit
 class TodoListViewController: UITableViewController {
 
     var itemArray = ["Find Mike", "Feed Cat", "Feed Dog"]
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if let items = defaults.array(forKey: "ToDoListArray") as? [String] {
+            itemArray = items
+        }
 
     }
     //Creates number of rows
@@ -53,7 +56,11 @@ class TodoListViewController: UITableViewController {
         
         let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
             //What will happen once the user clicks the add item button on our  UI ALrt
-           self.itemArray.append(textField.text!)
+            
+            self.itemArray.append(textField.text!)
+            
+            self.defaults.set(self.itemArray, forKey: "ToDoListArray")
+            
             self.tableView.reloadData()
             
         }
