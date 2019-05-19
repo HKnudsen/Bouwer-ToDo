@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Bouwer ToDo-->
+        <!--Items-->
         <scene sceneID="wO5-bs-MWc">
             <objects>
                 <tableViewController id="Z9E-8L-LCp" customClass="TodoListViewController" customModule="Bouwer_ToDo" customModuleProvider="target" sceneMemberID="viewController">
@@ -40,7 +40,7 @@
                             <outlet property="delegate" destination="Z9E-8L-LCp" id="VyC-BF-SUM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Bouwer ToDo" id="DkQ-W6-3tT">
+                    <navigationItem key="navigationItem" title="Items" id="DkQ-W6-3tT">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="2ND-7U-lyX">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -51,7 +51,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8FD-e3-g50" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1697.1014492753625" y="138.61607142857142"/>
+            <point key="canvasLocation" x="1687" y="125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="G2b-FN-THI">
@@ -68,12 +68,51 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Z9E-8L-LCp" kind="relationship" relationship="rootViewController" id="XYD-Rj-pyp"/>
+                        <segue destination="KqZ-Iz-8qc" kind="relationship" relationship="rootViewController" id="T84-6n-scc"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKg-Mg-5c6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1001" y="139"/>
+            <point key="canvasLocation" x="-86" y="125"/>
+        </scene>
+        <!--Bouwer Todo-->
+        <scene sceneID="W9w-Wu-nnR">
+            <objects>
+                <tableViewController id="KqZ-Iz-8qc" customClass="CategoryViewController" customModule="Bouwer_ToDo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="W2s-OT-yDv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="ixl-Ih-knx">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ixl-Ih-knx" id="PuW-sw-lZk">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KqZ-Iz-8qc" id="AO8-DK-pGF"/>
+                            <outlet property="delegate" destination="KqZ-Iz-8qc" id="BYM-yD-zMG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Bouwer Todo" id="Oqw-8r-3lF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="G0T-Ih-yQc">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="KqZ-Iz-8qc" id="A0j-Wp-85P"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="Z9E-8L-LCp" kind="show" identifier="goToItems" id="im8-YJ-1cG"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WlH-1r-OxY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795" y="125"/>
         </scene>
     </scenes>
 </document>

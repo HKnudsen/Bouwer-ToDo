@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D085DFB722907314008278DA /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D085DFB622907314008278DA /* CategoryViewController.swift */; };
 		D0F91C2E2289D772006CCEA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F91C2D2289D772006CCEA7 /* AppDelegate.swift */; };
 		D0F91C302289D772006CCEA7 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F91C2F2289D772006CCEA7 /* TodoListViewController.swift */; };
 		D0F91C332289D772006CCEA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F91C312289D772006CCEA7 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D085DFB622907314008278DA /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		D0F91C2A2289D772006CCEA7 /* Bouwer ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bouwer ToDo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F91C2D2289D772006CCEA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0F91C2F2289D772006CCEA7 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodoListViewController.swift; path = ../TodoListViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		D0F91C42228A0BEE006CCEA7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D085DFB622907314008278DA /* CategoryViewController.swift */,
 				D0F91C2F2289D772006CCEA7 /* TodoListViewController.swift */,
 			);
 			path = Controllers;
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D085DFB722907314008278DA /* CategoryViewController.swift in Sources */,
 				D0F91C302289D772006CCEA7 /* TodoListViewController.swift in Sources */,
 				D0F91C68228AE76D006CCEA7 /* DataModel.xcdatamodeld in Sources */,
 				D0F91C2E2289D772006CCEA7 /* AppDelegate.swift in Sources */,
