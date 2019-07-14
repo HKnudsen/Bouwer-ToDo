@@ -9,18 +9,21 @@
 /* Begin PBXBuildFile section */
 		C87E23D35320DFAA28DF69AD /* Pods_Bouwer_ToDo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0744DCBD41667D04439A40 /* Pods_Bouwer_ToDo.framework */; };
 		D085DFB722907314008278DA /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D085DFB622907314008278DA /* CategoryViewController.swift */; };
+		D085DFBB2291F3A2008278DA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D085DFBA2291F3A2008278DA /* Item.swift */; };
+		D085DFBD2291F3B3008278DA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D085DFBC2291F3B3008278DA /* Category.swift */; };
 		D0F91C2E2289D772006CCEA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F91C2D2289D772006CCEA7 /* AppDelegate.swift */; };
 		D0F91C302289D772006CCEA7 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F91C2F2289D772006CCEA7 /* TodoListViewController.swift */; };
 		D0F91C332289D772006CCEA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F91C312289D772006CCEA7 /* Main.storyboard */; };
 		D0F91C352289D776006CCEA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F91C342289D776006CCEA7 /* Assets.xcassets */; };
 		D0F91C382289D776006CCEA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F91C362289D776006CCEA7 /* LaunchScreen.storyboard */; };
-		D0F91C68228AE76D006CCEA7 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0F91C66228AE76D006CCEA7 /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10667B9144D42B1EA11FC096 /* Pods-Bouwer ToDo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bouwer ToDo.debug.xcconfig"; path = "Target Support Files/Pods-Bouwer ToDo/Pods-Bouwer ToDo.debug.xcconfig"; sourceTree = "<group>"; };
 		3B0744DCBD41667D04439A40 /* Pods_Bouwer_ToDo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bouwer_ToDo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D085DFB622907314008278DA /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		D085DFBA2291F3A2008278DA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D085DFBC2291F3B3008278DA /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		D0F91C2A2289D772006CCEA7 /* Bouwer ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bouwer ToDo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F91C2D2289D772006CCEA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0F91C2F2289D772006CCEA7 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodoListViewController.swift; path = ../TodoListViewController.swift; sourceTree = "<group>"; };
@@ -28,7 +31,6 @@
 		D0F91C342289D776006CCEA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0F91C372289D776006CCEA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0F91C392289D776006CCEA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0F91C67228AE76D006CCEA7 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		D5302AD45F034E15AA93388A /* Pods-Bouwer ToDo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bouwer ToDo.release.xcconfig"; path = "Target Support Files/Pods-Bouwer ToDo/Pods-Bouwer ToDo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +60,6 @@
 				10667B9144D42B1EA11FC096 /* Pods-Bouwer ToDo.debug.xcconfig */,
 				D5302AD45F034E15AA93388A /* Pods-Bouwer ToDo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -96,7 +97,8 @@
 		D0F91C41228A0BB6006CCEA7 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				D0F91C66228AE76D006CCEA7 /* DataModel.xcdatamodeld */,
+				D085DFBC2291F3B3008278DA /* Category.swift */,
+				D085DFBA2291F3A2008278DA /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -249,10 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D085DFBB2291F3A2008278DA /* Item.swift in Sources */,
 				D085DFB722907314008278DA /* CategoryViewController.swift in Sources */,
 				D0F91C302289D772006CCEA7 /* TodoListViewController.swift in Sources */,
-				D0F91C68228AE76D006CCEA7 /* DataModel.xcdatamodeld in Sources */,
 				D0F91C2E2289D772006CCEA7 /* AppDelegate.swift in Sources */,
+				D085DFBD2291F3B3008278DA /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,19 +457,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		D0F91C66228AE76D006CCEA7 /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				D0F91C67228AE76D006CCEA7 /* DataModel.xcdatamodel */,
-			);
-			currentVersion = D0F91C67228AE76D006CCEA7 /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = D0F91C222289D772006CCEA7 /* Project object */;
 }
